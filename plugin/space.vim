@@ -88,9 +88,8 @@ elseif exists("g:space_loaded")
 endif
 let g:space_loaded = 1
 
-noremap <expr> <silent> <Space>   <SID>do_space(0, "<Space>")
-noremap <expr> <silent> <S-Space> <SID>do_space(1, "<S-Space>")
-noremap <expr> <silent> <BS>      <SID>do_space(1, "<BS>")
+noremap <expr> <silent> <Plug>SmartSpaceNext <SID>do_space(0, "<Space>")
+noremap <expr> <silent> <Plug>SmartSpacePrev <SID>do_space(1, "<BS>")
 
 if exists("g:space_disable_select_mode")
     silent! sunmap <Space>
